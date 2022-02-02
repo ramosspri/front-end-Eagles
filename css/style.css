@@ -5,9 +5,8 @@ body {
     background-color: #121418;
 }
 
-.borda-lateral-baixo {
+.borda-lateral {
     border-right: 2px solid #595B5F;
-    border-bottom: 2px solid #595B5F;
 }
 
 .menu-lateral {
@@ -21,10 +20,14 @@ body {
 
 /* Menu Lateral */
 /* Logo */
+.menu-lateral {
+    padding:0;
+}
 .logo {
     display:flex;
     justify-content:space-between;
     padding: 0 25px 0 20px;
+    border-bottom:2px solid #595B5F
 }
 
 .logo__eaglesimg {
@@ -41,18 +44,29 @@ body {
     margin-left:-10px;
 }
 
-.menu-lateral {
-    padding:0;
-}
+
 .menu-principal-empresa {
     padding:0;
 }
-
 .titulo-empresa {
+    margin-top:30px;
     display:flex;
     justify-content:space-between;
+
 }
-.titulo-empresa-engrenagem {
-    width:20px;
-    height:20px;
+
+.espaco {
+    padding:0 20px 0px 30px;
+}
+
+.menu-principal {
+    margin-top:30px;
+}
+
+.espaco + .espaco {
+    margin-top:25px;
+}
+.item-menu {
+    display:flex;
+    gap:30px;
 }
