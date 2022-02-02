@@ -5,8 +5,16 @@ body {
     background-color: #121418;
 }
 
-.logo-eagles {
+.borda-lateral-baixo {
     border-right: 2px solid #595B5F;
     border-bottom: 2px solid #595B5F;
+}
+
+.menu-lateral {
+    font-size: 100px;
+}
+
+.borda-lateral {
+    border-right: 2px solid #595B5F;
 }
 
