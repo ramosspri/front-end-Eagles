@@ -11,10 +11,36 @@ body {
 }
 
 .menu-lateral {
-    font-size: 100px;
+    font-size: 15px;
 }
 
 .borda-lateral {
     border-right: 2px solid #595B5F;
 }
 
+
+/* Menu Lateral */
+/* Logo */
+.logo {
+    display:flex;
+    justify-content:space-between;
+    padding: 0 30px 0 30px;
+}
+
+.logo__eaglesimg {
+    width:94px;
+    height:94px;
+}
+
+.logo__setas {
+    align-items: center;
+    display:flex;
+}
+
+.logo__seta2 {
+    margin-left:-10px;
+}
+
+.menu-lateral {
+    padding:0;
+}
