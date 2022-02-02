@@ -1,16 +1,12 @@
 
 
 body {
-    font-family: 'Poppins', sans-serif;
-    
+    font-family: 'Poppins', sans-serif;    
     background-color: #121418;
-
 }
 
-
-
-/* Bordas do Aside */
-
-.border {
-    color: #595B5F;
+.logo-eagles {
+    border-right: 2px solid #595B5F;
+    border-bottom: 2px solid #595B5F;
 }
+
