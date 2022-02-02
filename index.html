@@ -1,154 +1,311 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Eagles</title> 
-    <link rel="stylesheet" href="css/cssreset.css"> 
-    <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">  
-    <link rel="stylesheet" href="css/style.css"> 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">            
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Eagles</title>
+    <link rel="stylesheet" href="css/cssreset.css" />
+    <link
+      rel="stylesheet"
+      href="css/bootstrap.min.css"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
-    <!-- Logomarca -->
-    <div>
-      <aside class="col-3 menu-lateral borda-lateral">
-        <div class="logo">
-          <img src="assets/logo 01.png" alt="Eagles" class="logo__eaglesimg">
+    <!-- LOGOMARCA -->
+    <div class="grid">
+      <aside class="menu-lateral  borda-lateral">
+        <div class="logo ">
+          <img src="assets/eagleslogo.svg" alt="Eagles" class="logo__eaglesimg" />
           <div class="logo__setas">
-            <span class="iconify pe-0 logo__seta1" data-icon="dashicons:arrow-left-alt2" style="color: #666; font-size: 20px;"></span>
-            <span class="iconify ps-0 logo__seta2" data-icon="dashicons:arrow-left-alt2" style="color: #666; font-size: 20px;"></span>
+
+            <span
+              class="iconify pe-0 logo__seta1"
+              data-icon="dashicons:arrow-left-alt2"
+              style="color: #666; font-size: 16px"
+            ></span>
+
+            <span
+              class="iconify ps-0 logo__seta2"
+              data-icon="dashicons:arrow-left-alt2"
+              style="color: #666; font-size: 16px"
+            ></span>
+          </div>
+        </div>
+        <!-- LOGOMARCA -->
+
+        <!-- MENU PRINCIPAL DA EMPRESA -->
+        <div
+          class="menu-principal espaco"
+        >
+          <div class="espacamento-menu-top">
+            <div class="titulo">
+              <div class="text-light">Empresa</div>
+
+              <span
+                class="iconify titulo-empresa-engrenagem"
+                data-icon="icon-park-outline:config"
+                style="color: #666; font-size: 16px"
+              ></span>
+            </div>
+          </div>
+
+          <!-- PERFIL DA EMPRESA. -->
+          <div class="perfil items-menu">
+            <span
+              class="iconify"
+              data-icon="simple-icons:eagle"
+              style="color: #666; font-size: 35px"
+            ></span>
+            <div class="col text-light"><strong>Eagles</strong></div>
+          </div>
+          <!-- PERFIL DA EMPRESA. -->
+
+          <div class="items-menu emcima">
+            <span
+              class="iconify"
+              data-icon="bx:bxs-home-heart"
+              style="color: #666; font-size: 25px"
+            ></span>
+            <a href="#" class="link-light text-decoration-none">Home</a>
+          </div>
+
+          <div class="items-menu">
+            <span
+              class="iconify"
+              data-icon="bi:credit-card"
+              style="color: #666; font-size: 25px"
+            ></span>
+            <a href="#" class="link-light text-decoration-none">Cartões</a>
+          </div>
+
+          <div class="items-menu">
+            <span
+              class="iconify"
+              data-icon="grommet-icons:transaction"
+              style="color: #666; font-size: 25px"
+            ></span>
+            <a href="#" class="link-light text-decoration-none">Transações</a>
+          </div>
+
+          <div class="items-menu">
+            <span
+              class="iconify"
+              data-icon="fluent:people-community-20-filled"
+              style="color: #666; font-size: 25px"
+            ></span>
+            <a href="#" class="link-light text-decoration-none">Pessoas</a>
           </div>
         </div>
 
-        <!-- Menu principal empresa -->
-        <div class="container p-2 menu-principal-empresa borda-lateral-baixo" style="border-bottom: 2px solid #666;">          
-          <div class="espaco">
-            <div class="titulo-empresa">
-              <span class="text-light">Empresa</span>
-              <span class="iconify titulo-empresa-engrenagem" data-icon="icon-park-outline:config" style="color: #666; font-size: 20px;"></span>
+        <!-- MENU PRINCIPAL DA EMPRESA -->
+        <hr class="reta">
+
+        <!-- MENU PRINCIPAL DO ADMINISTRADOR 1 -->
+        <div class="espaco">
+          <div class="espacamento-menu-top">
+            <div class="titulo">
+              <div class="col text-light ">Administrador 1</div>
+              <span
+                class="iconify"
+                data-icon="icon-park-outline:config"
+                style="color: #666; font-size: 16px"
+              ></span>
             </div>
           </div>
 
-          <div class="menu-principal">
-            <div class="espaco item-menu">
-              <span class="iconify" data-icon="simple-icons:eagle" style="color: #666; font-size: 35px;"></span>
-              <span class="text-light"><strong>Eagles</strong></span>
-            </div>
-
-            <div class="espaco item-menu">
-              <span class="iconify" data-icon="bx:bxs-home-heart" style="color: #666; font-size: 25px;"></span>
-              <a href="#" class="link-light text-decoration-none">Home</a>
-            </div>
-
-            <div class="espaco item-menu">
-              <span class="iconify" data-icon="bi:credit-card" style="color: #666; font-size: 25px;"></span>
-              <a href="#" class="link-light text-decoration-none item-menu-texto">Cartões</a>
-            </div>
-
-            <div class="espaco item-menu">
-              <span class="iconify" data-icon="grommet-icons:transaction" style="color: #666; font-size: 25px;"></span>
-              <a href="#" class="link-light text-decoration-none item-menu-texto">Transações</a>
-            </div>
-
-            <div class="espaco item-menu">
-              <span class="iconify" data-icon="fluent:people-community-20-filled" style="color: #666; font-size: 25px;"></span>
-              <a href="#" class="link-light text-decoration-none item-menu-texto">Pessoas</a>
-            </div>
+          <div class="perfil items-menu">
+            <span
+              class="iconify"
+              data-icon="bi:person-circle"
+              style="color: #666; font-size: 35px"
+            ></span>
+            <div class="col text-light">João</div>
           </div>
 
+          <div class="items-menu">
+            <span
+              class="iconify emcima"
+              data-icon="bx:bxs-user-plus"
+              style="color: #666; font-size: 25px"
+            ></span>
+            <a href="#" class=" link-light text-decoration-none">Admissão</a>
+          </div>
+
+          <div class="items-menu">
+            <span
+              class="iconify"
+              data-icon="bx:bxs-user-minus"
+              style="color: #666; font-size: 25px"
+            ></span>
+            <a href="#" class="link-light text-decoration-none">Demissão</a>
+          </div>
+
+          <div class="items-menu">
+            <span
+              class="iconify"
+              data-icon="dashicons:money"
+              style="color: #666; font-size: 25px"
+            ></span>
+            <a href="#" class="link-light text-decoration-none">Folha</a>
+          </div>
+
+          <div class="items-menu">
+            <span
+              class="iconify"
+              data-icon="wpf:paid"
+              style="color: #666; font-size: 25px"
+            ></span>
+            <a href="#" class="link-light text-decoration-none">Benefícios</a>
+          </div>
         </div>
+    <!-- MENU PRINCIPAL DO ADMINISTRADOR 1 -->
+    <hr class="reta">
 
-          <!-- Menu principal funcionário -->
-          <div class="container p-2" style="border-bottom: 2px solid #666;">
-            
-            <div class="espaco">
-              <div class="titulo-empresa">
-                <span class="text-light">Empresa</span>
-                <span class="iconify titulo-empresa-engrenagem" data-icon="icon-park-outline:config" style="color: #666; font-size: 20px;"></span>
-              </div>
-            </div>
+    <!-- MENU PRINCIPAL DO ADMINISTRADOR 2 -->
+    <div class="espaco">
+      <div class="espacamento-menu-top">
+        <div class="titulo">
+          <div class="col text-light ">Administrador 2</div>
+          <span
+            class="iconify"
+            data-icon="icon-park-outline:config"
+            style="color: #666; font-size: 16px"
+          ></span>
+        </div>
+      </div>
 
-            <div class="row row-cols-3 row-cols-lg-5 g-2 g-lg-3 p-2 m-4">
-              <span class="iconify" data-icon="bi:person-circle" style="color: #666; font-size: 30px;"></span>
-              <div class="col text-light">
-                João
-              </div>
-            </div>
+      <div class="perfil items-menu">
+        <span
+          class="iconify"
+          data-icon="bi:person-circle"
+          style="color: #666; font-size: 35px"
+        ></span>
+        <div class="col text-light">Maria</div>
+      </div>
 
-            <div class="row-cols-3 row-cols-lg-5 g-2 g-lg-3 p-2">
-              <span class="iconify" data-icon="bx:bxs-user-plus" style="color: #666; font-size: 30px;"></span>
-              <a href="#" class="link-light text-decoration-none">Admissão</a>
-            </div>
+      <div class="items-menu">
+        <span
+          class="iconify"
+          data-icon="bx:bxs-user-plus"
+          style="color: #666; font-size: 25px"
+        ></span>
+        <a href="#" class="link-light text-decoration-none">Admissão</a>
+      </div>
 
-            <div class="row row-cols-3 row-cols-lg-5 g-2 g-lg-3 p-2">
-              <span class="iconify" data-icon="bx:bxs-user-minus" style="color: #666; font-size: 30px;"></span>
-              <a href="#" class="link-light text-decoration-none">Demissão</a>
-            </div>
+      <div class="items-menu">
+        <span
+          class="iconify"
+          data-icon="bx:bxs-user-minus"
+          style="color: #666; font-size: 25px"
+        ></span>
+        <a href="#" class="link-light text-decoration-none">Demissão</a>
+      </div>
 
-            <div class="row row-cols-3 row-cols-lg-5 g-2 g-lg-3 p-2">
-              <span class="iconify" data-icon="dashicons:money" style="color: #666; font-size: 30px;"></span>
-              <a href="#" class="link-light text-decoration-none">Folha</a>
-            </div>
+      <div class="items-menu">
+        <span
+          class="iconify"
+          data-icon="dashicons:money"
+          style="color: #666; font-size: 25px"
+        ></span>
+        <a href="#" class="link-light text-decoration-none">Folha</a>
+      </div>
 
-            <div class="row row-cols-3 row-cols-lg-5 g-2 g-lg-3 p-2">
-              <span class="iconify" data-icon="wpf:paid" style="color: #666; font-size: 30px;"></span>
-              <a href="#" class="link-light text-decoration-none">Benefícios</a>
+      <div class="items-menu">
+        <span
+          class="iconify"
+          data-icon="wpf:paid"
+          style="color: #666; font-size: 25px"
+        ></span>
+        <a href="#" class="link-light text-decoration-none">Benefícios</a>
+      </div>
+    </div>
+  <!-- MENU PRINCIPAL DO ADMINISTRADOR 2-->
+  </aside>
+      <main style="color: white">
+        <nav class="navegador">
+          <h4 class="titulo-main d-flex ps-2">Pessoas</h4>
+
+          <div class="navegador__search d-flex justify-content-between">            
+            <button class="criar-usuario teste">Criar usuário
+              <span class="iconify" data-icon="fluent:people-add-16-filled" style="color: #01ffac; font-size: 16px;"></span>
+            </button>
+            <div class="barra-pesquisa ps-3">
+              <input class="form-control text-light barra-pesquisa" type="text" placeholder="Procurar" aria-label="default input example" style="background-color: #262c33;">
+              <span class="iconify barra-pesquisa__lupa" data-icon="bx:bx-search-alt"  style="color: #01ffac; font-size: 25px;"></span>
             </div>
           </div>
-
-          <!-- Menu secundário funcionário -->
-          <div class="container p-2" style="border-bottom: 2px solid #666;">
-            
-            <div class="row-cols-3 row-cols-lg-5 g-2 g-lg-3 p-2">
-              <div class="col text-light">
-                Administrador
-              </div>
-              <span class="iconify" data-icon="icon-park-outline:config" style="color: #666; font-size: 20px;"></span>
-            </div>
-
-            <div class="row row-cols-3 row-cols-lg-5 g-2 g-lg-3 p-2 m-4">
-              <span class="iconify" data-icon="bi:person-circle" style="color: #666; font-size: 30px;"></span>
-              <div class="col text-light">
-                Maria
-              </div>
-            </div>
-
-            <div class="row-cols-3 row-cols-lg-5 g-2 g-lg-3 p-2">
-              <span class="iconify" data-icon="bx:bxs-user-plus" style="color: #666; font-size: 30px;"></span>
-              <a href="#" class="link-light text-decoration-none">Admissão</a>
-            </div>
-
-            <div class="row row-cols-3 row-cols-lg-5 g-2 g-lg-3 p-2">
-              <span class="iconify" data-icon="bx:bxs-user-minus" style="color: #666; font-size: 30px;"></span>
-              <a href="#" class="link-light text-decoration-none">Demissão</a>
-            </div>
-
-            <div class="row row-cols-3 row-cols-lg-5 g-2 g-lg-3 p-2">
-              <span class="iconify" data-icon="dashicons:money" style="color: #666; font-size: 30px;"></span>
-              <a href="#" class="link-light text-decoration-none">Folha</a>
-            </div>
-
-            <div class="row row-cols-3 row-cols-lg-5 g-2 g-lg-3 p-2">
-              <span class="iconify" data-icon="wpf:paid" style="color: #666; font-size: 30px;"></span>
-              <a href="#" class="link-light text-decoration-none">Benefícios</a>
-            </div>
-
-          </div>
-            
-      <main class="col-8"> 
-
-      </main>
+ 
+        </nav>
+        <div class="tabela-princ">
+          <table class="table text-light tabela text-center">        
+            <tr class="text-center">
+              <th class="color-collumn">ID</th>
+              <th class="color-collumn">Nome</th>
+              <th class="color-collumn">Sobrenome</th>
+              <th class="color-collumn">Data de Nascimento</th>
+              <th class="color-collumn">Data de Admissão</th>
+              <th class="color-collumn">Salário</th>
+            </tr>
+            <tr class="linha">
+              <td>1</td>
+              <td>Maria das Graças</td>
+              <td>Soares</td>
+              <td>01/01/1965</td>
+              <td>01/05/2020</td>
+              <td>R$ 1.500</td>
+            </tr>
+            <tr class="linha">
+              <td>2</td>
+              <td>Carlos Eduardo</td>
+              <td>de Jesus</td>
+              <td>07/09/2001</td>
+              <td>10/01/2022</td>
+              <td>R$ 1.500</td>
+            </tr>
+            <tr class="linha">
+              <td>3</td>
+              <td>Priscila Ramos</td>
+              <td>Oliveira</td>
+              <td>11/10/1990</td>
+              <td>10/01/2022</td>
+              <td>R$ 1.500</td>
+            </tr>
+          </table>
+        </div>
 
     </div>
     <!-- JavaScript -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>    
-    <script type="text/javascript" src="javascript/bootstrap.js" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="javascript/bootstrap.js"
+      crossorigin="anonymous"
+    ></script>
     <script type="text/javascript" src="javascript/script.js"></script>
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
   </body>
