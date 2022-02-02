@@ -24,7 +24,7 @@ body {
 .logo {
     display:flex;
     justify-content:space-between;
-    padding: 0 30px 0 30px;
+    padding: 0 25px 0 20px;
 }
 
 .logo__eaglesimg {
@@ -43,4 +43,16 @@ body {
 
 .menu-lateral {
     padding:0;
+}
+.menu-principal-empresa {
+    padding:0;
+}
+
+.titulo-empresa {
+    display:flex;
+    justify-content:space-between;
+}
+.titulo-empresa-engrenagem {
+    width:20px;
+    height:20px;
 }
