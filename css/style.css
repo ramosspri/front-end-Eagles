@@ -169,10 +169,36 @@ td {
 .items-menu:hover .items-menu-icon {
   color: #01ffac;
 }
+
 .items-menu:hover .link-light {
   color: #01ffac;
 }
+
 .items-menu-icon {
   color: #666;
   font-size: 25px;
+}
+
+.modal-pers {
+  background-color: #1a1b1f;
+  color: white;
+}
+
+.grid-modal {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-modal {
+  background: #01ffac;
+  color: #272a32;
+}
+
+.btn-modal:hover {
+  opacity: 0.7;
+}
+
+.modal-footer-tres {
+  display: flex;
+  justify-content: space-between;
 }
