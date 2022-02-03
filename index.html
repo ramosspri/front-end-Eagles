@@ -47,8 +47,8 @@
           </div>
 
           <div class="modal-body">
-            <!-- FORMULÁRIO -->
-            <form>
+            <!-- FORMULÁRIO CADASTRO -->
+            <form data-formularioCadastro>
               <div class="mb-3 grid-modal">
                 <div class="modal-nome">
                   <label for="exampleInputEmail1" class="form-label"
@@ -59,6 +59,7 @@
                     class="form-control"
                     id="exampleInputEmail1"
                     aria-describedby="emailHelp"
+                    data-cadastroNome
                   />
                 </div>
 
@@ -71,6 +72,7 @@
                     class="form-control"
                     id="exampleInputEmail1"
                     aria-describedby="emailHelp"
+                    data-cadastroSobrenome
                   />
                 </div>
               </div>
@@ -83,6 +85,7 @@
                   type="date"
                   class="form-control"
                   id="exampleInputPassword1"
+                  data-dateNascimento
                 />
               </div>
             </form>
@@ -97,7 +100,7 @@
             >
               Fechar
             </button>
-            <button type="submit" class="btn btn-modal" data-botaoEnviar>
+            <button type="submit" class="btn btn-modal" data-botaoCriar>
               Enviar
             </button>
           </div>
@@ -129,18 +132,19 @@
           </div>
 
           <div class="modal-body">
-            <!-- FORMULÁRIO -->
-            <form>
+            <!-- FORMULÁRIO editar -->
+            <form data-formularioEdita>
               <div class="mb-3 grid-modal">
                 <div class="modal-nome">
                   <label for="exampleInputEmail1" class="form-label"
                     >Nome</label
                   >
                   <input
-                    type="name"
+                    type="text"
                     class="form-control"
                     id="exampleInputEmail1"
                     aria-describedby="emailHelp"
+                    data-cadastroNome
                     disabled
                   />
                 </div>
@@ -150,10 +154,11 @@
                     >Sobrenome</label
                   >
                   <input
-                    type="name"
+                    type="text"
                     class="form-control"
                     id="exampleInputEmail1"
                     aria-describedby="emailHelp"
+                    data-cadastroSobrenome
                     disabled
                   />
                 </div>
@@ -167,11 +172,12 @@
                   type="date"
                   class="form-control"
                   id="exampleInputPassword1"
+                  data-dateNascimento
                   disabled
                 />
               </div>
             </form>
-            <!-- FORMULÁRIO -->
+            <!-- FORMULÁRIO 2 -->
           </div>
 
           <div class="modal-footer modal-footer-tres">
@@ -420,12 +426,15 @@
                 placeholder="Procurar"
                 aria-label="default input example"
                 style="background-color: #262c33"
+                data-barraPesquisa
               />
-              <span
-                class="iconify barra-pesquisa__lupa"
-                data-icon="bx:bx-search-alt"
-                style="color: #01ffac; font-size: 25px"
-              ></span>
+              <div class="barra-pesquisa__back">
+                <span
+                  class="iconify barra-pesquisa__lupa"
+                  data-icon="bx:bx-search-alt"
+                  style="color: #01ffac; font-size: 25px"
+                ></span>
+              </div>
             </div>
           </div>
         </nav>
