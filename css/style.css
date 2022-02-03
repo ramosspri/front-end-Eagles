@@ -13,7 +13,7 @@ body {
 }
 
 .borda-lateral {
-  border-right: 2px solid #595b5f;
+  border-right: 2px solid #272a32;
 }
 
 /* Menu Lateral */
@@ -25,7 +25,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 0 25px 0 20px;
-  border-bottom: 2px solid #595b5f;
+  border-bottom: 2px solid #272a32;
 }
 
 .logo__eaglesimg {
@@ -60,6 +60,7 @@ body {
 .titulo {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .titulo span {
@@ -82,7 +83,7 @@ body {
 }
 
 .reta {
-  color: red;
+  color: #272a32;
   width: 90%;
   margin: 0 auto;
 }
@@ -102,18 +103,16 @@ hr:not([size]) {
   background-color: #262c33;
   font-size: 10px;
 }
+.criar-usuario:hover {
+  opacity: 0.7;
+}
 
 .form-control {
   width: 220px;
   height: 39px;
-  /* margin-top: 10px; */
   border-radius: 0px;
   font-size: 12px;
 }
-/* 
-.titulo-main {
-  /* margin-top: 50px;
-  margin-left: 15px; */
 
 .navegador {
   margin-top: 60px;
@@ -142,18 +141,38 @@ hr:not([size]) {
 /* TABELA */
 .tabela {
   margin-top: 75px;
-  border-color: #666666;
+  border-color: #272a32;
 }
+
 .tabela-princ {
   margin-right: 40px;
 }
+
 .color-collumn {
   color: #666666;
-  /* border-right: 2px solid white; */
 }
+
 .linha {
   cursor: pointer;
+  font-size: 14px;
 }
+
+td {
+  border-right: 2px solid #272a32;
+  border-left: 2px solid #272a32;
+}
+
 .linha:hover {
   color: #666666;
+}
+
+.items-menu:hover .items-menu-icon {
+  color: #01ffac;
+}
+.items-menu:hover .link-light {
+  color: #01ffac;
+}
+.items-menu-icon {
+  color: #666;
+  font-size: 25px;
 }
