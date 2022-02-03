@@ -55,7 +55,7 @@
                     >Nome</label
                   >
                   <input
-                    type="email"
+                    type="text"
                     class="form-control"
                     id="exampleInputEmail1"
                     aria-describedby="emailHelp"
@@ -67,7 +67,7 @@
                     >Sobrenome</label
                   >
                   <input
-                    type="email"
+                    type="text"
                     class="form-control"
                     id="exampleInputEmail1"
                     aria-describedby="emailHelp"
@@ -80,7 +80,7 @@
                   >Data de Nascimento</label
                 >
                 <input
-                  type="password"
+                  type="date"
                   class="form-control"
                   id="exampleInputPassword1"
                 />
@@ -97,7 +97,9 @@
             >
               Fechar
             </button>
-            <button type="button" class="btn btn-modal">Enviar</button>
+            <button type="submit" class="btn btn-modal" data-botaoEnviar>
+              Enviar
+            </button>
           </div>
         </div>
       </div>
@@ -135,7 +137,7 @@
                     >Nome</label
                   >
                   <input
-                    type="email"
+                    type="name"
                     class="form-control"
                     id="exampleInputEmail1"
                     aria-describedby="emailHelp"
@@ -148,7 +150,7 @@
                     >Sobrenome</label
                   >
                   <input
-                    type="email"
+                    type="name"
                     class="form-control"
                     id="exampleInputEmail1"
                     aria-describedby="emailHelp"
@@ -162,7 +164,7 @@
                   >Data de Nascimento</label
                 >
                 <input
-                  type="password"
+                  type="date"
                   class="form-control"
                   id="exampleInputPassword1"
                   disabled
@@ -173,7 +175,9 @@
           </div>
 
           <div class="modal-footer modal-footer-tres">
-            <button type="button" class="btn btn-danger">Deletar</button>
+            <button type="button" class="btn btn-danger" data-botaoDeletar>
+              Deletar
+            </button>
             <div>
               <button
                 type="button"
@@ -182,7 +186,9 @@
               >
                 Fechar
               </button>
-              <button type="button" class="btn btn-modal">Editar</button>
+              <button type="button" class="btn btn-modal" data-botaoEditar>
+                Editar
+              </button>
             </div>
           </div>
         </div>
@@ -388,7 +394,7 @@
         <!-- MENU PRINCIPAL DO ADMINISTRADOR 2-->
       </aside>
 
-      <main class="teste" style="color: white">
+      <main style="color: white">
         <nav class="navegador">
           <h4 class="titulo-main d-flex ps-2">Pessoas</h4>
 
@@ -397,8 +403,10 @@
               class="criar-usuario teste"
               data-toggle="modal"
               data-target="#exampleModal"
+              data-criarUsuario
             >
               Criar usuário
+
               <span
                 class="iconify"
                 data-icon="fluent:people-add-16-filled"
