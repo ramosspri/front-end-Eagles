@@ -21,112 +21,184 @@
   </head>
 
   <body>
-
     <!-- MODAL CADASTRO DOS USUÁRIOS-->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="CadastroUsuario" aria-hidden="true">
-      <div class="modal-dialog  " role="document">
-
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="CadastroUsuario"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
         <div class="modal-content modal-pers">
-
           <div class="modal-header">
-            <h5 class="modal-title " id="CadastroUsuario">Cadastro de Usuários</h5>
-            <button type="button" class="close modal-pers" data-dismiss="modal" aria-label="Close">
+            <h5 class="modal-title" id="CadastroUsuario">
+              Cadastro de Usuários
+            </h5>
+            <button
+              type="button"
+              class="close modal-pers"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
 
           <div class="modal-body">
-
-              <!-- FORMULÁRIO -->
-              <form >
-                <div class="mb-3 grid-modal">
-                  <div class="modal-nome">
-                    <label for="exampleInputEmail1" class="form-label">Nome</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  </div>
-
-                  <div class="modal-sobrenome">
-                    <label for="exampleInputEmail1" class="form-label">Sobrenome</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  </div>
+            <!-- FORMULÁRIO -->
+            <form>
+              <div class="mb-3 grid-modal">
+                <div class="modal-nome">
+                  <label for="exampleInputEmail1" class="form-label"
+                    >Nome</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                  />
                 </div>
-               
-                <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label">Data de Nascimento</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1">
-                </div>
-              </form>
-              <!-- FORMULÁRIO -->
 
+                <div class="modal-sobrenome">
+                  <label for="exampleInputEmail1" class="form-label"
+                    >Sobrenome</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                  />
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Data de Nascimento</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+            </form>
+            <!-- FORMULÁRIO -->
           </div>
 
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Fechar
+            </button>
             <button type="button" class="btn btn-modal">Enviar</button>
           </div>
         </div>
       </div>
     </div>
 
-<!-- MODAL PERFIL DOS USUÁRIOS -->
-<div class="modal fade" id="teste" tabindex="-1" role="dialog" aria-labelledby="CadastroUsuario" aria-hidden="true">
-  <div class="modal-dialog  " role="document">
-
-    <div class="modal-content modal-pers">
-
-      <div class="modal-header">
-        <h5 class="modal-title " id="CadastroUsuario">Perfil do Usuário</h5>
-        <button type="button" class="close modal-pers" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-
-      <div class="modal-body">
-        
-        <!-- FORMULÁRIO -->
-        <form >
-          <div class="mb-3 grid-modal" >
-            <div class="modal-nome">
-              <label for="exampleInputEmail1" class="form-label">Nome</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" disabled>
-            </div>
-
-            <div class="modal-sobrenome">
-              <label for="exampleInputEmail1" class="form-label">Sobrenome</label>
-              <input type="email" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp" disabled>
-            </div>
-          </div>
-         
-          <div class="mb-3 ">
-            <label for="exampleInputPassword1" class="form-label">Data de Nascimento</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" disabled>
+    <!-- MODAL PERFIL DOS USUÁRIOS -->
+    <div
+      class="modal fade"
+      id="teste"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="CadastroUsuario"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content modal-pers">
+          <div class="modal-header">
+            <h5 class="modal-title" id="CadastroUsuario">Perfil do Usuário</h5>
+            <button
+              type="button"
+              class="close modal-pers"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
 
+          <div class="modal-body">
+            <!-- FORMULÁRIO -->
+            <form>
+              <div class="mb-3 grid-modal">
+                <div class="modal-nome">
+                  <label for="exampleInputEmail1" class="form-label"
+                    >Nome</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    disabled
+                  />
+                </div>
 
-        </form>
-        <!-- FORMULÁRIO -->
-      </div>
+                <div class="modal-sobrenome">
+                  <label for="exampleInputEmail1" class="form-label"
+                    >Sobrenome</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    disabled
+                  />
+                </div>
+              </div>
 
-      <div class="modal-footer modal-footer-tres">
-        <button type="button" class="btn btn-danger">Deletar</button>
-        <div>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-          <button type="button" class="btn btn-modal">Editar</button>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Data de Nascimento</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                  disabled
+                />
+              </div>
+            </form>
+            <!-- FORMULÁRIO -->
+          </div>
+
+          <div class="modal-footer modal-footer-tres">
+            <button type="button" class="btn btn-danger">Deletar</button>
+            <div>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Fechar
+              </button>
+              <button type="button" class="btn btn-modal">Editar</button>
+            </div>
+          </div>
         </div>
       </div>
-    
     </div>
-  </div>
-</div>
-
 
     <!-- LOGOMARCA -->
     <div class="grid">
-      <aside class="menu-lateral  borda-lateral">
-        <div class="logo ">
-          <img src="assets/eagleslogo.svg" alt="Eagles" class="logo__eaglesimg" />
+      <aside class="menu-lateral borda-lateral">
+        <div class="logo">
+          <img
+            src="assets/eagleslogo.svg"
+            alt="Eagles"
+            class="logo__eaglesimg"
+          />
           <div class="logo__setas">
-
             <span
               class="iconify pe-0 logo__seta1"
               data-icon="dashicons:arrow-left-alt2"
@@ -143,9 +215,7 @@
         <!-- LOGOMARCA -->
 
         <!-- MENU PRINCIPAL DA EMPRESA -->
-        <div
-          class="menu-principal espaco"
-        >
+        <div class="menu-principal espaco">
           <div class="espacamento-menu-top">
             <div class="titulo">
               <div class="text-light">Empresa</div>
@@ -172,7 +242,6 @@
             <span
               class="iconify items-menu-icon"
               data-icon="bx:bxs-home-heart"
-              
             ></span>
             <a href="#" class="link-light text-decoration-none">Home</a>
           </div>
@@ -199,19 +268,23 @@
               data-icon="fluent:people-community-20-filled"
               style="color: #01ffac"
             ></span>
-            <a href="#" class="link-light text-decoration-none" style="color: #01ffac"
-            >Pessoas</a>
+            <a
+              href="#"
+              class="link-light text-decoration-none"
+              style="color: #01ffac"
+              >Pessoas</a
+            >
           </div>
         </div>
 
         <!-- MENU PRINCIPAL DA EMPRESA -->
-        <hr class="reta">
+        <hr class="reta" />
 
         <!-- MENU PRINCIPAL DO ADMINISTRADOR 1 -->
         <div class="espaco">
           <div class="espacamento-menu-top">
             <div class="titulo">
-              <div class="col text-light ">Administrador 1</div>
+              <div class="col text-light">Administrador 1</div>
               <span
                 class="iconify"
                 data-icon="icon-park-outline:config"
@@ -225,7 +298,7 @@
               class="iconify"
               data-icon="bi:person-circle"
               style="color: #666; font-size: 35px"
-              ></span>
+            ></span>
             <div class="col text-light">João</div>
           </div>
 
@@ -234,7 +307,7 @@
               class="iconify emcima items-menu-icon"
               data-icon="bx:bxs-user-plus"
             ></span>
-            <a href="#" class=" link-light text-decoration-none">Admissão</a>
+            <a href="#" class="link-light text-decoration-none">Admissão</a>
           </div>
 
           <div class="items-menu">
@@ -254,91 +327,103 @@
           </div>
 
           <div class="items-menu">
-            <span
-              class="iconify items-menu-icon"
-              data-icon="wpf:paid"
-            ></span>
+            <span class="iconify items-menu-icon" data-icon="wpf:paid"></span>
             <a href="#" class="link-light text-decoration-none">Benefícios</a>
           </div>
         </div>
-    <!-- MENU PRINCIPAL DO ADMINISTRADOR 1 -->
-    <hr class="reta">
+        <!-- MENU PRINCIPAL DO ADMINISTRADOR 1 -->
+        <hr class="reta" />
 
-    <!-- MENU PRINCIPAL DO ADMINISTRADOR 2 -->
-    <div class="espaco">
-      <div class="espacamento-menu-top">
-        <div class="titulo">
-          <div class="col text-light ">Administrador 2</div>
-          <span
-            class="iconify"
-            data-icon="icon-park-outline:config"
-            style="color: #666; font-size: 16px"
-          ></span>
+        <!-- MENU PRINCIPAL DO ADMINISTRADOR 2 -->
+        <div class="espaco">
+          <div class="espacamento-menu-top">
+            <div class="titulo">
+              <div class="col text-light">Administrador 2</div>
+              <span
+                class="iconify"
+                data-icon="icon-park-outline:config"
+                style="color: #666; font-size: 16px"
+              ></span>
+            </div>
+          </div>
+
+          <div class="perfil items-menu">
+            <span
+              class="iconify items-menu-icon"
+              data-icon="bi:person-circle"
+              style="color: #666; font-size: 35px"
+            ></span>
+            <div class="col text-light">Maria</div>
+          </div>
+
+          <div class="items-menu">
+            <span
+              class="iconify items-menu-icon"
+              data-icon="bx:bxs-user-plus"
+            ></span>
+            <a href="#" class="link-light text-decoration-none">Admissão</a>
+          </div>
+
+          <div class="items-menu">
+            <span
+              class="iconify items-menu-icon"
+              data-icon="bx:bxs-user-minus"
+            ></span>
+            <a href="#" class="link-light text-decoration-none">Demissão</a>
+          </div>
+
+          <div class="items-menu">
+            <span
+              class="iconify items-menu-icon"
+              data-icon="dashicons:money"
+            ></span>
+            <a href="#" class="link-light text-decoration-none">Folha</a>
+          </div>
+
+          <div class="items-menu">
+            <span class="iconify items-menu-icon" data-icon="wpf:paid"></span>
+            <a href="#" class="link-light text-decoration-none">Benefícios</a>
+          </div>
         </div>
-      </div>
+        <!-- MENU PRINCIPAL DO ADMINISTRADOR 2-->
+      </aside>
 
-      <div class="perfil items-menu">
-        <span
-          class="iconify items-menu-icon"
-          data-icon="bi:person-circle"
-          style="color: #666; font-size: 35px"
-
-        ></span>
-        <div class="col text-light">Maria</div>
-      </div>
-
-      <div class="items-menu">
-        <span
-          class="iconify items-menu-icon"
-          data-icon="bx:bxs-user-plus"
-        ></span>
-        <a href="#" class="link-light text-decoration-none">Admissão</a>
-      </div>
-
-      <div class="items-menu">
-        <span
-          class="iconify items-menu-icon"
-          data-icon="bx:bxs-user-minus"
-        ></span>
-        <a href="#" class="link-light text-decoration-none">Demissão</a>
-      </div>
-
-      <div class="items-menu">
-        <span
-          class="iconify items-menu-icon"
-          data-icon="dashicons:money"
-        ></span>
-        <a href="#" class="link-light text-decoration-none">Folha</a>
-      </div>
-
-      <div class="items-menu">
-        <span
-          class="iconify items-menu-icon"
-          data-icon="wpf:paid"
-        ></span>
-        <a href="#" class="link-light text-decoration-none">Benefícios</a>
-      </div>
-    </div>
-  <!-- MENU PRINCIPAL DO ADMINISTRADOR 2-->
-  </aside>
-      <main style="color: white">
+      <main class="teste" style="color: white">
         <nav class="navegador">
           <h4 class="titulo-main d-flex ps-2">Pessoas</h4>
 
-          <div class="navegador__search d-flex justify-content-between">            
-            <button class="criar-usuario teste" data-toggle="modal" data-target="#exampleModal">Criar usuário
-              <span class="iconify" data-icon="fluent:people-add-16-filled" style="color: #01ffac; font-size: 16px;"></span>
+          <div class="navegador__search d-flex justify-content-between">
+            <button
+              class="criar-usuario teste"
+              data-toggle="modal"
+              data-target="#exampleModal"
+            >
+              Criar usuário
+              <span
+                class="iconify"
+                data-icon="fluent:people-add-16-filled"
+                style="color: #01ffac; font-size: 16px"
+              ></span>
             </button>
             <div class="barra-pesquisa ps-3">
-              <input class="form-control text-light barra-pesquisa" type="text" placeholder="Procurar" aria-label="default input example" style="background-color: #262c33;">
-              <span class="iconify barra-pesquisa__lupa" data-icon="bx:bx-search-alt"  style="color: #01ffac; font-size: 25px;"></span>
+              <input
+                class="form-control text-light barra-pesquisa"
+                type="text"
+                placeholder="Procurar"
+                aria-label="default input example"
+                style="background-color: #262c33"
+              />
+              <span
+                class="iconify barra-pesquisa__lupa"
+                data-icon="bx:bx-search-alt"
+                style="color: #01ffac; font-size: 25px"
+              ></span>
             </div>
           </div>
- 
         </nav>
 
         <div class="tabela-princ">
-          <table class="table text-light tabela text-center">        
+          <table class="table text-light tabela text-center">
             <tr class="text-center">
               <th class="color-collumn">ID</th>
               <th class="color-collumn">Nome</th>
@@ -371,10 +456,9 @@
               <td>10/01/2022</td>
               <td>R$ 1.500</td>
             </tr>
-            
           </table>
         </div>
-
+      </main>
     </div>
     <!-- JavaScript -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->

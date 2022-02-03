@@ -10,11 +10,40 @@ body {
 
 .menu-lateral {
   font-size: 15px;
+
+  /* position: fixed;
+  top: 0;
+  left: 0;*/
+  /* SIDE BAR FIXA DO LADO ESQUERDO. */
+  overflow-y: scroll;
+  height: 100vh;
 }
 
-.borda-lateral {
-  border-right: 2px solid #272a32;
+/* SCROLL BAR */
+
+/* LARGURA */
+::-webkit-scrollbar {
+  width: 3px;
 }
+
+/* cAMINHO */
+::-webkit-scrollbar-track {
+  background: #272a32;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* .borda-lateral {
+  /* border-right: 2px solid #272a32; */
+*/
 
 /* Menu Lateral */
 /* Logo */
