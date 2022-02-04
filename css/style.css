@@ -169,17 +169,13 @@ hr:not([size]) {
 }
 
 /* TABELA */
-.tabela {
-  margin-top: 75px;
+.tabela-princ {
+  margin-right: 30px;  
   border-color: #272a32;
 }
 
-.tabela-princ {
-  margin-right: 40px;
-}
-
 .color-collumn {
-  color: #666666;
+  color: hsl(0, 0%, 40%);
 }
 
 .linha {
@@ -188,12 +184,11 @@ hr:not([size]) {
 }
 
 td {
-  border-right: 2px solid #272a32;
-  border-left: 2px solid #272a32;
+  border: 2px solid #272a32;
 }
 
 .linha:hover {
-  color: #666666;
+  color: #EFEFEF;
 }
 
 .items-menu:hover .items-menu-icon {

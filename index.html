@@ -4,338 +4,178 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Eagles</title>
-    <link rel="stylesheet" href="css/cssreset.css" />
-    <link
-      rel="stylesheet"
-      href="css/bootstrap.min.css"
-      crossorigin="anonymous"
-    />
-
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="css/cssreset.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"/>
   </head>
 
   <body>
-    <!-- MODAL CADASTRO DOS USUÁRIOS-->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="CadastroUsuario"
-      aria-hidden="true"
-    >
+    <!-- Início do modal de cadastro -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="CadastroUsuario" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content modal-pers">
           <div class="modal-header">
-            <h5 class="modal-title" id="CadastroUsuario">
-              Cadastro de Usuários
-            </h5>
-            <button
-              type="button"
-              class="close modal-pers"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
+            <h5 class="modal-title" id="CadastroUsuario">Cadastro de Usuários</h5>
+            <button type="button" class="close modal-pers" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
 
-          <div class="modal-body">
-            <!-- FORMULÁRIO CADASTRO -->
+          <!-- Início do formulário -->
+          <div class="modal-body">            
             <form data-formularioCadastro>
               <div class="mb-3 grid-modal">
                 <div class="modal-nome">
-                  <label for="exampleInputEmail1" class="form-label"
-                    >Nome</label
-                  >
-                  <input
-                    type="text"
-                    class="form-control input"
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
-                    data-cadastroNome
-                  />
+                  <label for="exampleInputEmail1" class="form-label">Nome</label>
+                  <input type="text" class="form-control input" id="exampleInputEmail1" aria-describedby="emailHelp" data-cadastroNome/>
                 </div>
 
                 <div class="modal-sobrenome">
-                  <label for="exampleInputEmail1" class="form-label"
-                    >Sobrenome</label
-                  >
-                  <input
-                    type="text"
-                    class="form-control input"
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
-                    data-cadastroSobrenome
-                  />
+                  <label for="exampleInputEmail1" class="form-label">Sobrenome</label>
+                  <input type="text" class="form-control input" id="exampleInputEmail1" aria-describedby="emailHelp" data-cadastroSobrenome/>
                 </div>
               </div>
 
               <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label"
-                  >Data de Nascimento</label
-                >
-                <input
-                  type="date"
-                  class="form-control input"
-                  id="exampleInputPassword1"
-                  data-dateNascimento
-                />
+                <label for="exampleInputPassword1" class="form-label">Data de Nascimento</label>
+                <input type="date" class="form-control input" id="exampleInputPassword1" data-dateNascimento/>
               </div>
-            </form>
-            <!-- FORMULÁRIO -->
+            </form>            
           </div>
 
+          <!-- Início do modal de cadastro de usuário -->
           <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-dismiss="modal"
-            >
-              Fechar
-            </button>
-
-            <button type="submit" class="btn btn-modal" data-botaoCriar>
-              Enviar
-            </button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            <button type="submit" class="btn btn-modal" data-botaoCriar>Salvar</button>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- MODAL PERFIL DOS USUÁRIOS -->
-    <div
-      class="modal fade"
-      id="teste"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="CadastroUsuario"
-      aria-hidden="true"
-    >
+    <div class="modal fade" id="teste" tabindex="-1" role="dialog" aria-labelledby="CadastroUsuario" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content modal-pers">
           <div class="modal-header">
             <h5 class="modal-title" id="CadastroUsuario">Perfil do Usuário</h5>
-            <button
-              type="button"
-              class="close modal-pers"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
+            <button type="button" class="close modal-pers" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
 
-          <div class="modal-body">
-            <!-- FORMULÁRIO editar -->
+          <!-- Editar formulário -->
+          <div class="modal-body modalEditar">            
             <form data-formularioEdita>
               <div class="mb-3 grid-modal">
                 <div class="modal-nome">
-                  <label for="exampleInputEmail1" class="form-label"
-                    >Nome</label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
-                    data-cadastroNome
-                    disabled
-                  />
+                  <label for="exampleInputEmail1" class="form-label">Nome</label>
+                  <input type="text" class="form-control nomeUsuario input2" id="exampleInputEmail1" aria-describedby="emailHelp" data-cadastroNome />
                 </div>
 
                 <div class="modal-sobrenome">
-                  <label for="exampleInputEmail1" class="form-label"
-                    >Sobrenome</label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
-                    data-cadastroSobrenome
-                    disabled
-                  />
+                  <label for="exampleInputEmail1" class="form-label">Sobrenome</label>
+                  <input type="text" class="form-control sobrenomeUsuario input2" id="exampleInputEmail1" aria-describedby="emailHelp" data-cadastroSobrenome />
                 </div>
               </div>
 
               <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label"
-                  >Data de Nascimento</label
-                >
-                <input
-                  type="date"
-                  class="form-control"
-                  id="exampleInputPassword1"
-                  data-dateNascimento
-                  disabled
-                />
+                <label for="exampleInputPassword1" class="form-label ">Data de Nascimento</label>
+                <input type="date" class="form-control dataNascimento input2" id="exampleInputPassword1" data-dateNascimento />
               </div>
-            </form>
-            <!-- FORMULÁRIO 2 -->
+            </form>            
           </div>
 
           <div class="modal-footer modal-footer-tres">
-            <button type="button" class="btn btn-danger" data-botaoDeletar>
-              Deletar
-            </button>
+            <button type="button" class="btn btn-danger" data-botaoDeletar>Deletar</button>
             <div>
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-dismiss="modal"
-              >
-                Fechar
-              </button>
-              <button type="button" class="btn btn-modal" data-botaoEditar>
-                Editar
-              </button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+              <button type="button" class="btn btn-modal" data-botaoEditar>Salvar</button>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- LOGOMARCA -->
+    <!-- Logomarca -->
     <div class="grid">
       <aside class="menu-lateral borda-lateral">
         <div class="logo">
-          <img
-            src="assets/eagleslogo.svg"
-            alt="Eagles"
-            class="logo__eaglesimg"
-          />
+          <img src="assets/eagleslogo.svg" alt="Eagles" class="logo__eaglesimg"/>
           <div class="logo__setas">
-            <span
-              class="iconify pe-0 logo__seta1"
-              data-icon="dashicons:arrow-left-alt2"
-              style="color: #666; font-size: 16px"
-            ></span>
-
-            <span
-              class="iconify ps-0 logo__seta2"
-              data-icon="dashicons:arrow-left-alt2"
-              style="color: #666; font-size: 16px"
-            ></span>
+          <span class="iconify pe-0 logo__seta1" data-icon="dashicons:arrow-left-alt2" style="color: #666; font-size: 16px"></span>
+          <span class="iconify ps-0 logo__seta2" data-icon="dashicons:arrow-left-alt2" style="color: #666; font-size: 16px"></span>
           </div>
         </div>
-        <!-- LOGOMARCA -->
-
-        <!-- MENU PRINCIPAL DA EMPRESA -->
-        <div class="menu-principal espaco">
-          <div class="espacamento-menu-top">
-            <div class="titulo">
-              <div class="text-light">Empresa</div>
-              <span
-                class="iconify titulo-empresa-engrenagem"
-                data-icon="icon-park-outline:config"
-                style="color: #666; font-size: 16px"
-              ></span>
-            </div>
-          </div>
-
-          <!-- PERFIL DA EMPRESA. -->
-          <div class="perfil items-menu">
-            <span
-              class="iconify"
-              data-icon="simple-icons:eagle"
-              style="color: #666; font-size: 35px"
-            ></span>
-            <div class="col text-light"><strong>Eagles</strong></div>
-          </div>
-          <!-- PERFIL DA EMPRESA. -->
-
-          <div class="items-menu emcima">
-            <span
-              class="iconify items-menu-icon"
-              data-icon="bx:bxs-home-heart"
-            ></span>
-            <a href="home.html" class="link-light text-decoration-none">Home</a>
-          </div>
-
-          <div class="items-menu">
-            <span
-              class="iconify items-menu-icon"
-              data-icon="bi:credit-card"
-            ></span>
-            <a href="#" class="link-light text-decoration-none">Cartões</a>
-          </div>
-
-          <div class="items-menu">
-            <span
-              class="iconify items-menu-icon"
-              data-icon="grommet-icons:transaction"
-            ></span>
-            <a href="#" class="link-light text-decoration-none">Transações</a>
-          </div>
-
-          <div class="items-menu">
-            <span
-              class="iconify items-menu-icon"
-              data-icon="fluent:people-community-20-filled"
-              style="color: #01ffac"
-            ></span>
-            <a
-              href="index.html"
-              class="link-light text-decoration-none"
-              style="color: #01ffac"
-              >Pessoas</a
-            >
-          </div>
+ 
+    <!-- Menu empresa e engrenagem -->
+    <div class="menu-principal espaco">
+      <div class="espacamento-menu-top">
+        <div class="titulo">
+        <div class="text-light">Empresa</div>
+        <span class="iconify titulo-empresa-engrenagem" data-icon="icon-park-outline:config" style="color: #666; font-size: 16px"></span>
         </div>
+      </div>
 
-        <!-- MENU PRINCIPAL DA EMPRESA -->
-        <hr class="reta" />
+    <!-- Início do perfil da empresa -->
+    <div class="perfil items-menu">
+      <span class="iconify" data-icon="simple-icons:eagle" style="color: #666; font-size: 35px"></span>
+      <div class="col text-light"><strong>Eagles</strong></div>
+    </div>
+    <!-- Fim do perfil da empresa -->
 
-        <!-- MENU PRINCIPAL DO ADMINISTRADOR 1 -->
+    <!--Menu da empresa-->
+    <div class="items-menu emcima">
+      <span class="iconify items-menu-icon" data-icon="bx:bxs-home-heart"></span>
+      <a href="home.html" class="link-light text-decoration-none">Home</a>
+    </div>
+
+    <div class="items-menu">
+      <span class="iconify items-menu-icon" data-icon="bi:credit-card"></span>
+      <a href="#" class="link-light text-decoration-none">Cartões</a>
+    </div>
+
+    <div class="items-menu">
+      <span class="iconify items-menu-icon" data-icon="grommet-icons:transaction"></span>
+      <a href="#" class="link-light text-decoration-none">Transações</a>
+    </div>
+
+    <div class="items-menu">
+      <span class="iconify items-menu-icon" data-icon="fluent:people-community-20-filled" style="color: #01ffac"></span>
+      <a href="index.html" class="link-light text-decoration-none" style="color: #01ffac">Pessoas</a>
+    </div>
+  </div>
+
+  <!--Linha de separação dos menus-->
+  <hr class="reta" />
+
+        <!-- Início do menu administrador 1 -->
         <div class="espaco">
           <div class="espacamento-menu-top">
             <div class="titulo">
               <div class="col text-light">Administrador 1</div>
-              <span
-                class="iconify"
-                data-icon="icon-park-outline:config"
-                style="color: #666; font-size: 16px"
-              ></span>
+              <span class="iconify" data-icon="icon-park-outline:config" style="color: #666; font-size: 16px"></span>
             </div>
           </div>
 
           <div class="perfil items-menu">
-            <span
-              class="iconify"
-              data-icon="bi:person-circle"
-              style="color: #666; font-size: 35px"
-            ></span>
+            <span class="iconify" data-icon="bi:person-circle" style="color: #666; font-size: 35px"></span>
             <div class="col text-light">João</div>
           </div>
 
           <div class="items-menu">
-            <span
-              class="iconify emcima items-menu-icon"
-              data-icon="bx:bxs-user-plus"
-            ></span>
+            <span class="iconify emcima items-menu-icon" data-icon="bx:bxs-user-plus"></span>
             <a href="#" class="link-light text-decoration-none">Admissão</a>
           </div>
 
           <div class="items-menu">
-            <span
-              class="iconify items-menu-icon"
-              data-icon="bx:bxs-user-minus"
-            ></span>
+            <span class="iconify items-menu-icon" data-icon="bx:bxs-user-minus"></span>
             <a href="#" class="link-light text-decoration-none">Demissão</a>
           </div>
 
           <div class="items-menu">
-            <span
-              class="iconify items-menu-icon"
-              data-icon="dashicons:money"
-            ></span>
+            <span class="iconify items-menu-icon" data-icon="dashicons:money"></span>
             <a href="#" class="link-light text-decoration-none">Folha</a>
           </div>
 
@@ -344,52 +184,37 @@
             <a href="#" class="link-light text-decoration-none">Benefícios</a>
           </div>
         </div>
-        <!-- MENU PRINCIPAL DO ADMINISTRADOR 1 -->
-        <hr class="reta" />
+        <!-- Fim do menu administrador 1 -->
+        
+        <!--Linha de separação dos menus-->
+        <hr class="reta"/>
 
-        <!-- MENU PRINCIPAL DO ADMINISTRADOR 2 -->
+        <!-- Início do menu administrador 2 -->
         <div class="espaco">
           <div class="espacamento-menu-top">
             <div class="titulo">
               <div class="col text-light">Administrador 2</div>
-              <span
-                class="iconify"
-                data-icon="icon-park-outline:config"
-                style="color: #666; font-size: 16px"
-              ></span>
+              <span class="iconify" data-icon="icon-park-outline:config" style="color: #666; font-size: 16px"></span>
             </div>
           </div>
 
           <div class="perfil items-menu">
-            <span
-              class="iconify items-menu-icon"
-              data-icon="bi:person-circle"
-              style="color: #666; font-size: 35px"
-            ></span>
+            <span class="iconify items-menu-icon" data-icon="bi:person-circle" style="color: #666; font-size: 35px"></span>
             <div class="col text-light">Maria</div>
           </div>
 
           <div class="items-menu">
-            <span
-              class="iconify items-menu-icon"
-              data-icon="bx:bxs-user-plus"
-            ></span>
+            <span class="iconify items-menu-icon" data-icon="bx:bxs-user-plus"></span>
             <a href="#" class="link-light text-decoration-none">Admissão</a>
           </div>
 
           <div class="items-menu">
-            <span
-              class="iconify items-menu-icon"
-              data-icon="bx:bxs-user-minus"
-            ></span>
+            <span class="iconify items-menu-icon" data-icon="bx:bxs-user-minus"></span>
             <a href="#" class="link-light text-decoration-none">Demissão</a>
           </div>
 
           <div class="items-menu">
-            <span
-              class="iconify items-menu-icon"
-              data-icon="dashicons:money"
-            ></span>
+            <span class="iconify items-menu-icon" data-icon="dashicons:money"></span>
             <a href="#" class="link-light text-decoration-none">Folha</a>
           </div>
 
@@ -398,109 +223,53 @@
             <a href="#" class="link-light text-decoration-none">Benefícios</a>
           </div>
         </div>
-        <!-- MENU PRINCIPAL DO ADMINISTRADOR 2-->
+        <!-- Fim do menu administrador 2 -->
       </aside>
 
-      <main style="color: white">
-        <nav class="navegador">
-          <h4 class="titulo-main d-flex ps-2">Pessoas</h4>
-
-          <div class="navegador__search d-flex justify-content-between">
-            <button
-              class="criar-usuario teste"
-              data-toggle="modal"
-              data-target="#exampleModal"
-              data-criarUsuario
-            >
-              Criar usuário
-
-              <span
-                class="iconify"
-                data-icon="fluent:people-add-16-filled"
-                style="color: #01ffac; font-size: 16px"
-              ></span>
-            </button>
-            <div class="barra-pesquisa ps-3">
-              <input
-                class="form-control text-light barra-pesquisa"
-                type="text"
-                placeholder="Procurar"
-                aria-label="default input example"
-                style="background-color: #262c33"
-                data-barraPesquisa
-              />
-              <div class="barra-pesquisa__back">
-                <span
-                  class="iconify barra-pesquisa__lupa"
-                  data-icon="bx:bx-search-alt"
-                  style="color: #01ffac; font-size: 25px"
-                ></span>
-              </div>
+<!-- Campo de pessoas, botões de adicionar usuário e barra de pesquisa -->
+  <main style="color: white">
+    <nav class="navegador">
+      <h4 class="titulo-main d-flex ps-2">Pessoas</h4>
+      <div class="navegador__search d-flex justify-content-between">
+        <button class="criar-usuario teste" data-toggle="modal" data-target="#exampleModal" data-criarUsuario> Criar usuário
+          <span class="iconify" data-icon="fluent:people-add-16-filled" style="color: #01ffac; font-size: 16px"></span>
+        </button>
+        <div class="barra-pesquisa ps-3">
+          <input class="form-control text-light barra-pesquisa" type="text" placeholder="Procurar" aria-label="default input example"  style="background-color: #262c33" data-barraPesquisa/>
+            <div class="barra-pesquisa__back">
+             <span class="iconify barra-pesquisa__lupa" data-icon="bx:bx-search-alt" style="color: #01ffac; font-size: 25px"></span>
             </div>
-          </div>
-        </nav>
-
-        <div class="tabela-princ">
-          <table class="table text-light tabela text-center">
-            <tr class="text-center">
-              <th class="color-collumn">ID</th>
-              <th class="color-collumn">Nome</th>
-              <th class="color-collumn">Sobrenome</th>
-              <th class="color-collumn">Data de Nascimento</th>
-              <th class="color-collumn">Data de Admissão</th>
-              <th class="color-collumn">Salário</th>
-            </tr>
-            <tr class="linha" data-toggle="modal" data-target="#teste">
-              <td>1</td>
-              <td>Maria das Graças</td>
-              <td>Soares</td>
-              <td>01/01/1965</td>
-              <td>01/05/2020</td>
-              <td>R$ 1.500</td>
-            </tr>
-            <tr class="linha" data-toggle="modal" data-target="#teste">
-              <td>2</td>
-              <td>Carlos Eduardo</td>
-              <td>de Jesus</td>
-              <td>07/09/2001</td>
-              <td>10/01/2022</td>
-              <td>R$ 1.500</td>
-            </tr>
-            <tr class="linha" data-toggle="modal" data-target="#teste">
-              <td>3</td>
-              <td>Priscila Ramos</td>
-              <td>Oliveira</td>
-              <td>11/10/1990</td>
-              <td>10/01/2022</td>
-              <td>R$ 1.500</td>
-            </tr>
-          </table>
         </div>
-      </main>
-    </div>
-    <!-- JavaScript -->
-    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      type="text/javascript"
-      src="javascript/bootstrap.js"
-      crossorigin="anonymous"
-    ></script>
-    <script type="text/javascript" src="javascript/script.js"></script>
-    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+      </div>
+    </nav>
+
+<!--Início da tabela principal-->
+  <div class="tabela-princ mt-5 text-light">
+    <table class="table text-light text-center"  id="fragao">
+      <tr class="text-center">
+        <th class="color-collumn">ID</th>
+        <th class="color-collumn">Nome</th>
+        <th class="color-collumn">Sobrenome</th>
+        <th class="color-collumn">Data de Nascimento</th>
+      </tr>             
+      <tr class="linha" data-toggle="modal" data-target="#teste" data-usuario>
+        <td>1</td>
+        <td>Carlos Eduardo</td>
+        <td>de Jesus</td>
+        <td>07/09/2001</td>
+      </tr>
+    </table>
+  </div>
+  </main>
+  </div>
+    
+<!-- Scripts -->    
+<!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script type="text/javascript" src="javascript/bootstrap.js" crossorigin="anonymous"></script>
+<script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+<script type="text/javascript" src="javascript/script.js"></script>
   </body>
 </html>
